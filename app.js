@@ -1,4 +1,3 @@
-
 // api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
 
 const weatherApi = {
@@ -47,7 +46,12 @@ function showWeatherReport(weather){
     let todayDate = new Date();
     date.innerText = dateManage(todayDate);
 
-    
+    let weather_iconEl = document.getElementById('weather-icon');
+    weather_iconEl.innerHTML = `<img src="http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png">
+    <div class="weather" id="weather">${weather.weather[0].main}</div>
+    `
+    let cityname = `${weather.name}` ;
+    document.body.style.background = "url('https://source.unsplash.com/1600x900/?" + cityname +"')"
 }
 
 // Date manage

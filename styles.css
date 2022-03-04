@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('flower.jpg');
+    background: url('https://source.unsplash.com/1600x900/?weather');
     height: 100vh;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -58,8 +58,9 @@ body {
     font-weight: bold;
 }
 
+
 .weather-status {
-    padding: 20px;
+    padding: 1px;
 }
 
 .temp {
@@ -69,7 +70,21 @@ body {
     text-shadow: 2px 4px rgba(0,0,0,0.3);
 }
 
+div #weather.weather{
+    margin: -20px;
+}
+
+.weather-status .icon-name{
+    background: #7e7e7e5e;
+    border-radius:20px;
+    width: fit-content;
+    margin-left: 25px;
+    padding: 0px 50px 0px 50px;
+    
+}
+
 .min-max, .weather {
+    margin: 10px;
     font-size: 12pt;
     font-weight: 600;
 }
