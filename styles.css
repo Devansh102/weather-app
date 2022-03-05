@@ -5,13 +5,11 @@
 }
 
 body {
-    background: url('https://source.unsplash.com/1600x900/?weather');
-    height: 100vh;
-    overflow: hidden;
-    background-repeat: no-repeat;
+    background: url('https://source.unsplash.com/1600x900/?weather') no-repeat;
+    overflow:hidden;
+    background-size:cover;
     background-position: top center;
     font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
 }
 
 .app-main {
@@ -71,20 +69,28 @@ body {
 }
 
 div #weather.weather{
-    margin: -20px;
+    margin: -30px;
+    padding: 5px;
+}
+
+
+.weather-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .weather-status .icon-name{
     background: #7e7e7e5e;
     border-radius:20px;
-    width: fit-content;
-    margin-left: 25px;
-    padding: 0px 50px 0px 50px;
-    
+    width: fit-content;   
 }
 
+
+
 .min-max, .weather {
-    margin: 10px;
+    margin: 5px;
     font-size: 12pt;
     font-weight: 600;
 }
