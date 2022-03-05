@@ -51,7 +51,8 @@ function showWeatherReport(weather){
     <div class="weather" id="weather">${weather.weather[0].main}</div>
     `
     let cityname = `${weather.name}` ;
-    document.body.style.background = "url('https://source.unsplash.com/1600x900/?" + cityname +"')"
+    document.body.style.background = "url('https://source.unsplash.com/1600x900/?" + cityname +"') no-repeat"
+    document.body.style.backgroundSize = "cover"  
 }
 
 // Date manage
